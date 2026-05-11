@@ -235,7 +235,7 @@ class TestServer(Server):
     async def serve(self, sockets=None):
         self.restart_requested = asyncio.Event()
 
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         tasks = {
             loop.create_task(super().serve(sockets=sockets)),
             loop.create_task(self.watch_restarts()),
