@@ -25,7 +25,7 @@ Some things HTTP Core does do:
 
 ## Requirements
 
-Python 3.8+
+Python 3.9+
 
 ## Installation
 
