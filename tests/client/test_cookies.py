@@ -10,7 +10,8 @@ def get_and_set_cookies(request: httpx2.Request) -> httpx2.Response:
         data = {"cookies": request.headers.get("cookie")}
         return httpx2.Response(200, json=data)
     elif request.url.path == "/set_cookie":
-        return httpx2.Response(200, headers={"set-cookie": "example-name=example-value"})
+        headers = {"set-cookie": "example-name=example-value"}
+        return httpx2.Response(200, headers=headers)
     else:
         raise NotImplementedError()  # pragma: no cover
 

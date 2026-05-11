@@ -7,7 +7,8 @@ import httpx2
 
 def redirects(request: httpx2.Request) -> httpx2.Response:
     if request.url.scheme not in ("http", "https"):
-        raise httpx2.UnsupportedProtocol(f"Scheme {request.url.scheme!r} not supported.")
+        msg = f"Scheme {request.url.scheme!r} not supported."
+        raise httpx2.UnsupportedProtocol(msg)
 
     if request.url.path == "/redirect_301":
         status_code = httpx2.codes.MOVED_PERMANENTLY

@@ -124,6 +124,7 @@ check_untyped_defs = true
 
 [tool.pytest.ini_options]
 addopts = "-rxXs"
+testpaths = ["tests"]
 filterwarnings = [
   "error",
   "ignore: You seem to already have a custom sys.excepthook handler installed. I'll skip installing Trio's custom handler, but this means MultiErrors will not show full tracebacks.:RuntimeWarning",

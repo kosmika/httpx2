@@ -27,7 +27,8 @@ def test_client_header():
     url = "http://example.org/echo_headers"
     headers = {"Example-Header": "example-value"}
 
-    client = httpx2.Client(transport=httpx2.MockTransport(echo_headers), headers=headers)
+    transport = httpx2.MockTransport(echo_headers)
+    client = httpx2.Client(transport=transport, headers=headers)
     response = client.get(url)
 
     assert response.status_code == 200

@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import typing
 
-import httpcore
 import pytest
 
+import httpcore
 import httpx2
 
 if typing.TYPE_CHECKING:  # pragma: no cover
