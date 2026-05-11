@@ -35,6 +35,10 @@ dependencies = [
 ]
 dynamic = ["readme", "version"]
 
+[tool.uv]
+default-groups = ["dev", "docs", "bench"]
+required-version = ">=0.8.6"
+
 [tool.uv.workspace]
 members = ["src/httpcore"]
 
@@ -90,10 +94,10 @@ docs = [
     "mkdocs-material==9.6.18",
 ]
 bench = [
-    "aiohttp==3.10.2",
-    "matplotlib==3.7.5",
-    "pyinstrument==4.6.2",
-    "urllib3==2.2.2",
+    "aiohttp>=3.10.2",
+    "matplotlib>=3.9",
+    "pyinstrument>=4.6.2",
+    "urllib3>=2.2.2",
 ]
 
 [project.scripts]
