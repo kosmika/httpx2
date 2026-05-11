@@ -8,42 +8,42 @@
     enable HTTP/2 and connection pooling for more efficient and
     long-lived connections.
 
-::: httpx.request
+::: httpx2.request
     :docstring:
 
-::: httpx.get
+::: httpx2.get
     :docstring:
 
-::: httpx.options
+::: httpx2.options
     :docstring:
 
-::: httpx.head
+::: httpx2.head
     :docstring:
 
-::: httpx.post
+::: httpx2.post
     :docstring:
 
-::: httpx.put
+::: httpx2.put
     :docstring:
 
-::: httpx.patch
+::: httpx2.patch
     :docstring:
 
-::: httpx.delete
+::: httpx2.delete
     :docstring:
 
-::: httpx.stream
+::: httpx2.stream
     :docstring:
 
 ## `Client`
 
-::: httpx.Client
+::: httpx2.Client
     :docstring:
     :members: headers cookies params auth request get head options post put patch delete stream build_request send close
 
 ## `AsyncClient`
 
-::: httpx.AsyncClient
+::: httpx2.AsyncClient
     :docstring:
     :members: headers cookies params auth request get head options post put patch delete stream build_request send aclose
 

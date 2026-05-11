@@ -39,86 +39,86 @@ For an overview of how to work with HTTPX exceptions, see [Exceptions (Quickstar
 
 ## Exception classes
 
-::: httpx.HTTPError
+::: httpx2.HTTPError
     :docstring:
 
-::: httpx.RequestError
+::: httpx2.RequestError
     :docstring:
 
-::: httpx.TransportError
+::: httpx2.TransportError
     :docstring:
 
-::: httpx.TimeoutException
+::: httpx2.TimeoutException
     :docstring:
 
-::: httpx.ConnectTimeout
+::: httpx2.ConnectTimeout
     :docstring:
 
-::: httpx.ReadTimeout
+::: httpx2.ReadTimeout
     :docstring:
 
-::: httpx.WriteTimeout
+::: httpx2.WriteTimeout
     :docstring:
 
-::: httpx.PoolTimeout
+::: httpx2.PoolTimeout
     :docstring:
 
-::: httpx.NetworkError
+::: httpx2.NetworkError
     :docstring:
 
-::: httpx.ConnectError
+::: httpx2.ConnectError
     :docstring:
 
-::: httpx.ReadError
+::: httpx2.ReadError
     :docstring:
 
-::: httpx.WriteError
+::: httpx2.WriteError
     :docstring:
 
-::: httpx.CloseError
+::: httpx2.CloseError
     :docstring:
 
-::: httpx.ProtocolError
+::: httpx2.ProtocolError
     :docstring:
 
-::: httpx.LocalProtocolError
+::: httpx2.LocalProtocolError
     :docstring:
 
-::: httpx.RemoteProtocolError
+::: httpx2.RemoteProtocolError
     :docstring:
 
-::: httpx.ProxyError
+::: httpx2.ProxyError
     :docstring:
 
-::: httpx.UnsupportedProtocol
+::: httpx2.UnsupportedProtocol
     :docstring:
 
-::: httpx.DecodingError
+::: httpx2.DecodingError
     :docstring:
 
-::: httpx.TooManyRedirects
+::: httpx2.TooManyRedirects
     :docstring:
 
-::: httpx.HTTPStatusError
+::: httpx2.HTTPStatusError
     :docstring:
 
-::: httpx.InvalidURL
+::: httpx2.InvalidURL
     :docstring:
 
-::: httpx.CookieConflict
+::: httpx2.CookieConflict
     :docstring:
 
-::: httpx.StreamError
+::: httpx2.StreamError
     :docstring:
 
-::: httpx.StreamConsumed
+::: httpx2.StreamConsumed
     :docstring:
 
-::: httpx.StreamClosed
+::: httpx2.StreamClosed
     :docstring:
 
-::: httpx.ResponseNotRead
+::: httpx2.ResponseNotRead
     :docstring:
 
-::: httpx.RequestNotRead
+::: httpx2.RequestNotRead
     :docstring:
