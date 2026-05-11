@@ -29,11 +29,17 @@ classifiers = [
 ]
 dependencies = [
     "certifi",
-    "httpcore==1.*",
+    "httpcore",
     "anyio",
     "idna",
 ]
 dynamic = ["readme", "version"]
+
+[tool.uv.workspace]
+members = ["src/httpcore"]
+
+[tool.uv.sources]
+httpcore = { workspace = true }
 
 [project.optional-dependencies]
 brotli = [
@@ -65,15 +71,18 @@ Homepage = "https://github.com/encode/httpx"
 Source = "https://github.com/encode/httpx"
 
 [tool.hatch.version]
-path = "httpx/__version__.py"
+path = "src/httpx/__version__.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/httpx",
+    "/src/httpx",
     "/CHANGELOG.md",
     "/README.md",
     "/tests",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/httpx"]
 
 [tool.hatch.metadata.hooks.fancy-pypi-readme]
 content-type = "text/markdown"
@@ -129,4 +138,4 @@ markers = [
 
 [tool.coverage.run]
 omit = ["venv/*"]
-include = ["httpx/*", "tests/*"]
+include = ["src/httpx/*", "tests/*"]
