@@ -25,7 +25,7 @@ dev = [
     "trio==0.31.0",
     "trio-typing==0.10.0",
     "trustme==1.2.1",
-    "uvicorn==0.35.0",
+    "uvicorn>=0.35",
     "werkzeug<3.1",  # See: https://github.com/psf/httpbin/issues/35
     # Linting
     "mypy==1.17.1",
